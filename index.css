@@ -25,22 +25,30 @@ div[role="dialog"]{
         width: 80%;
     }
 }
+[data-state='closed']{
+    display: block;
+}
+[data-state='opened']{
+    display: none;
+}
 
-.dialog-trigger{
+.open-dialog{
     margin: 1rem;
     padding: 0.125rem 0.5rem;
     border: 1px solid;
+    background-color: transparent;
 }
 
 .dialog-header{
-    display: flex;
-    justify-content: space-between;
-    div{
-        display: grid;
-        gap: 1rem;
-    }
+    display: grid;
+    gap: 1rem;
 }
 
+.close-dialog{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
 
 .dialog-content{
     margin-block: 2rem;
