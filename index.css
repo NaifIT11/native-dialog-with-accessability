@@ -4,12 +4,29 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Nunito;
+    src: url(./nunito-regular.woff);
+}
+
+
+:root{
+    --clr-primary: #3f51b5;
+}
+
+body{
+    font-family:  Nunito;
+}
+
 button{
     cursor: pointer;
     background-color: transparent;
     border: none;
 }
 
+:root{
+
+}
 
 div[role="dialog"]{
     position: absolute;
