@@ -54,7 +54,7 @@ div[role="dialog"]{
     padding: 0.125rem 0.5rem;
     border: 1px solid;
     background-color: transparent;
-    padding: 0.325rem 0.5rem;
+    padding: 0.625rem 0.5rem;
     border: none;
     border-radius: 0.125rem;
     color: white;
@@ -66,7 +66,7 @@ div[role="dialog"]{
 
 .dialog-header{
     display: grid;
-    gap: 1rem;
+    gap: 10px;
 }
 
 .close-dialog{
@@ -79,13 +79,22 @@ div[role="dialog"]{
     margin-block: 2rem;
 }
 
+.dialog-footer{
+    display: flex;
+    justify-content: end;
+}
+
 .save-btn{
-    padding: 0.325rem 0.5rem;
+    padding: 0.625rem 0.5rem;
     background-color: var(--clr-primary);
     color: white;
     border-radius: 0.125rem;
 }
 
+
+.dialog-description{
+    color: rgb(0 0 0 / 0.8);
+}
 
 form{
     width: 100%;
