@@ -20,10 +20,28 @@ div[role="dialog"]{
     border: 1px solid;
     border-radius: 0.325rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.8);
+    width: 50%;
+    @media(width <= 700px){
+        width: 80%;
+    }
 }
 
 .dialog-trigger{
     margin: 1rem;
     padding: 0.125rem 0.5rem;
     border: 1px solid;
+}
+
+.dialog-header{
+    display: flex;
+    justify-content: space-between;
+    div{
+        display: grid;
+        gap: 1rem;
+    }
+}
+
+
+.dialog-content{
+    margin-block: 2rem;
 }
