@@ -6,8 +6,20 @@
 
 button{
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+
+div[role="dialog"]{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
 }
 
 .dialog-trigger{
     margin: 1rem;
+    padding: 0.125rem 0.5rem;
+    border: 1px solid;
 }
